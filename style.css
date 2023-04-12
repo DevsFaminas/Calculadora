@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: rgb(74, 84, 94);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 38px auto;
+    border-radius: 5px;
+    background-color: rgb(112, 112, 112);
+    color: black;
+    padding: .5em;
+}
+
+#operations{
+    text-align: right;
+}
+
+.previous-operation, .current-operation {
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+.previous-operation {
+    color: #414141;
+    min-width: 0.6em;
+    min-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.current-operation {
+    min-width: 1.6em;
+    min-height: 1.62em;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#numbers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+.botao-calculadora {
+    background-color: rgb(163, 163, 163);
+    border: 1px solid gray;
+}
+
+.botao-acao-calculadora {
+    background-color: rgb(145, 145, 145);
+    border: 1px solid rgb(110, 110, 110);
+}
+
+.botao-calculadora:hover, .botao-acao-calculadora:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.botao-calculadora:active, .botao-acao-calculadora:active {
+    background-color: rgb(88, 88, 88);
+    border: 1px solid gray;
+    color: white;
+}
+
+.botao-calculadora, .botao-acao-calculadora, .botao-igual-calculadora {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 17px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.botao-igual-calculadora {
+    border: 1px solid rgb(22, 100, 179);
+    background-color: dodgerblue;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.botao-igual-calculadora:hover {
+    background-color: lightblue;
+}
+
+.botao-igual-calculadora:active {
+    background-color: rgb(23, 105, 187);
+    border-color: dodgerblue;
+}
+
+
+.titulo {
+    text-align: center;
+    display: flex;
+    align-self: center;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.titulo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
